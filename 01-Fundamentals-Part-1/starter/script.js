@@ -18,3 +18,18 @@ console.log(population++);
 console.log(population > 6);
 console.log(population < 33);
 let description = country + " is in " + continent + ", and its " + population + " million people speak " + language;
+
+const firstName = 'Preston';
+const job = 'student'
+const birthYear = 2001;
+const year = 2022;
+
+const preston = "I'm " + firstName + ", a " + (year - birthYear) + " year old " + job + "!";
+console.log(preston)
+
+const prestonNew = `I'm ${firstName}, a ${year-birthYear} year old ${job}!`;
+
+console.log(prestonNew)
+
+description = `${country} is in ${continent}, and its ${population} million people speak ${language}`;
+console.log(description);
