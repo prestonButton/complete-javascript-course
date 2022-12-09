@@ -11,3 +11,10 @@ console.log(typeof country);
 console.log(typeof language);
 
 language = "English";
+
+halfPopulation = population / 2;
+console.log(population++);
+
+console.log(population > 6);
+console.log(population < 33);
+let description = country + " is in " + continent + ", and its " + population + " million people speak " + language;
