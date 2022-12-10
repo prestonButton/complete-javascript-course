@@ -33,3 +33,29 @@ console.log(prestonNew)
 
 description = `${country} is in ${continent}, and its ${population} million people speak ${language}`;
 console.log(description);
+
+const age = 15;
+
+if(age >= 18) {
+    console.log(`${firstName} can get a license 🚗`)
+}else{
+    const yearsLeft = 18 - age;
+    console.log(`${firstName} is too young. wait ${yearsLeft} more years and try again`)
+}
+
+let century;
+
+if(birthYear >= 2000){
+    century = 21;
+}else{
+    century = 20
+}
+
+console.log(century);
+
+if(population > 33){
+    console.log(`${country} population is above average`);
+}else{
+    let lessThan = 33 - population;
+    console.log(`${country} population is ${lessThan} million below average`)
+}
