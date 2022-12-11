@@ -59,3 +59,5 @@ if(population > 33){
     let lessThan = 33 - population;
     console.log(`${country} population is ${lessThan} million below average`)
 }
+
+ 
