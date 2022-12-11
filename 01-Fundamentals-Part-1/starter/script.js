@@ -71,13 +71,22 @@ if(money) {
     console.log(`Get a job`);
 }
 
-let numNeighbors;
 
-age = 18;
+// age = 18;
 
-if( age === 18) console.log(`You just became an adult!`);
+// if( age === 18) console.log(`You just became an adult!`);
 
-const favorite = Number(prompt(`What is your favorite number?`));
-console.log(favorite);
+// const favorite = Number(prompt(`What is your favorite number?`));
+// console.log(favorite);
 
-if(favorite === 23) console.log(`Cool, 23 is an amazing number`)
+// if(favorite === 23) console.log(`Cool, 23 is an amazing number`)
+
+let numNeighbors = Number(prompt(`How many neighbors does your country have?`));
+
+if(numNeighbors === 1){
+    console.log(`Only 1 border!`)
+}else if(numNeighbors > 1) {
+    console.log(`More than one border!!!`)
+}else {
+    console.log(`No Borders :(`)
+}
