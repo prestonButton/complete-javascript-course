@@ -94,4 +94,10 @@ if(money) {
 const hasDriversLicense = true;
 const hasGoodVision = false;
 
-console.log(hasDriversLicense || hasGoodVision);
+console.log(hasDriversLicense || hasGoodVision); console.log(`I can drive a car`)
+
+if(language == "English" && population < 50 && isIsland === false){
+    console.log(`You should move to ${country}`)
+}else {
+    console.log(`${country} does not meet these requirements`)
+}
