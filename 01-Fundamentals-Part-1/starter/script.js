@@ -60,4 +60,16 @@ if(population > 33){
     console.log(`${country} population is ${lessThan} million below average`)
 }
 
- 
+console.log(Boolean(0));
+console.log(Boolean(7));
+
+const money = 3;
+
+if(money) {
+    console.log(`Don't spend it all`);
+}else{
+    console.log(`Get a job`);
+}
+
+let numNeighbors;
+
