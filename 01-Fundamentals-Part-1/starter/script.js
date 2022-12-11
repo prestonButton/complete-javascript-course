@@ -34,7 +34,7 @@ console.log(prestonNew)
 description = `${country} is in ${continent}, and its ${population} million people speak ${language}`;
 console.log(description);
 
-const age = 15;
+let age = 15;
 
 if(age >= 18) {
     console.log(`${firstName} can get a license 🚗`)
@@ -73,3 +73,11 @@ if(money) {
 
 let numNeighbors;
 
+age = 18;
+
+if( age === 18) console.log(`You just became an adult!`);
+
+const favorite = Number(prompt(`What is your favorite number?`));
+console.log(favorite);
+
+if(favorite === 23) console.log(`Cool, 23 is an amazing number`)
