@@ -124,3 +124,5 @@ switch(language) {
     default:
         console.log(`Great language too`);
 }
+
+console.log(`${country} population is ${population > 33 ? `above` : `below`} average`)
