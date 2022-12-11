@@ -106,9 +106,9 @@ Hints:
 GOOD LUCK �
 */
 
-const bill = 275;
+const bill = 100;
 let tip;
 
-bill > 50 && bill < 300 ? tip = bill * 0.15 : tip = bill * 0.2;
+bill >= 50 && bill <= 300 ? tip = bill * 0.15 : tip = bill * 0.2;
 
 console.log(`The bill was $${bill}, the tip was $${tip}, and the total was $${bill + tip}`);
