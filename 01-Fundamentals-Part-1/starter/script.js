@@ -10,7 +10,7 @@ console.log(typeof population);
 console.log(typeof country);
 console.log(typeof language);
 
-language = "English";
+language = "english";
 
 halfPopulation = population / 2;
 console.log(population++);
@@ -100,4 +100,27 @@ if(language == "English" && population < 50 && isIsland === false){
     console.log(`You should move to ${country}`)
 }else {
     console.log(`${country} does not meet these requirements`)
+}
+
+
+
+switch(language) {
+    case `chinese`:
+    case `mandarin`:
+        console.log(`Most number of native speakers`);
+        break;
+    case `spanish`:
+        console.log(`2nd place`);
+        break;
+    case `english`:
+        console.log(`3rd place`);
+        break;
+    case `hindi`:
+        console.log(`4th place`);
+        break;
+    case `arabic`:
+        console.log(`5th place`);
+        break;
+    default:
+        console.log(`Great language too`);
 }
