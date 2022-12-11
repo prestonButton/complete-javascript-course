@@ -81,12 +81,17 @@ if(money) {
 
 // if(favorite === 23) console.log(`Cool, 23 is an amazing number`)
 
-let numNeighbors = Number(prompt(`How many neighbors does your country have?`));
+// let numNeighbors = Number(prompt(`How many neighbors does your country have?`));
 
-if(numNeighbors === 1){
-    console.log(`Only 1 border!`)
-}else if(numNeighbors > 1) {
-    console.log(`More than one border!!!`)
-}else {
-    console.log(`No Borders :(`)
-}
+// if(numNeighbors === 1){
+//     console.log(`Only 1 border!`)
+// }else if(numNeighbors > 1) {
+//     console.log(`More than one border!!!`)
+// }else {
+//     console.log(`No Borders :(`)
+// }
+
+const hasDriversLicense = true;
+const hasGoodVision = false;
+
+console.log(hasDriversLicense || hasGoodVision);
