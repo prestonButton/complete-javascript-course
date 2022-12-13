@@ -79,3 +79,47 @@ const describePopulation = (country, population) => {
 }
 
 console.log(describePopulation('USA', 790));
+
+function cl(n) {
+    console.log(n);
+}
+
+const friends = ['Mike', 'Peter', 'Steve', 'Jim'];
+cl(friends);
+cl(friends[1])
+cl(friends.length)
+
+friends[2] = 'Jay';
+cl(friends)
+
+const firstName = "Preston"
+const preston = [firstName, 'Button', (2022 - 2001), 'student', friends];
+cl(preston)
+
+const years = [1990, 1967, 2002, 2010, 2018];
+const ages = []
+
+const populations = [10, 20, 30, 40];
+
+populations.length === 4 ? cl(true) : cl(false)
+
+const percentages = [percentageOfWorld1(populations[0]), percentageOfWorld1(populations[1]), percentageOfWorld1(populations[2]), percentageOfWorld1(populations[3])]
+
+cl(percentages);
+
+friends.push('sallie');
+cl(friends);
+
+friends.unshift('Jon');
+cl(friends);
+
+friends.pop();
+cl(friends);
+
+cl(friends.shift());
+cl(friends);
+
+cl(friends.indexOf('Peter'))
+
+cl(friends.includes('Peter'));
+
