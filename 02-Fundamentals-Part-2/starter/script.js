@@ -60,3 +60,22 @@ console.log(ageToRetirement(2001));
 const percentageOfWorld3 = population => population/79;
 
 console.log(percentageOfWorld3(790));
+
+function cutFruitPieces(fruit) {
+    return fruit*4;
+}
+
+function fruitProcessor(apples, oranges) {
+    const applePieces = cutFruitPieces(apples);
+    const orangePieces = cutFruitPieces(oranges);
+
+    const juice = `juice with ${applePieces} pieces of apples and ${orangePieces} pieces of oranges!!!`;
+    return juice;
+}
+
+const describePopulation = (country, population) => {
+    let percentage = percentageOfWorld1(population)
+    return `${country} has ${population} million people which is about ${percentage}% of the worlds population!!!`
+}
+
+console.log(describePopulation('USA', 790));
