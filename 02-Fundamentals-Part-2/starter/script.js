@@ -123,3 +123,12 @@ cl(friends.indexOf('Peter'))
 
 cl(friends.includes('Peter'));
 
+const neighbors = ['Canada', 'Mexico'];
+neighbors.push('Utopia');
+neighbors.pop();
+
+if(neighbors.includes('Germany') === false) console.log(`probably not a central european country`);
+
+neighbors[neighbors.indexOf('Canada')] = 'Communist State of Canada';
+cl(neighbors);
+
