@@ -93,8 +93,8 @@ friends[2] = 'Jay';
 cl(friends)
 
 const firstName = "Preston"
-const preston = [firstName, 'Button', (2022 - 2001), 'student', friends];
-cl(preston)
+const prestonArray = [firstName, 'Button', (2022 - 2001), 'student', friends];
+cl(prestonArray)
 
 const years = [1990, 1967, 2002, 2010, 2018];
 const ages = []
@@ -131,4 +131,20 @@ if(neighbors.includes('Germany') === false) console.log(`probably not a central 
 
 neighbors[neighbors.indexOf('Canada')] = 'Communist State of Canada';
 cl(neighbors);
+
+const prestonObject = {
+    firstName: 'Preston',
+    lastName: 'Button',
+    age: 21,
+    job: 'student',
+    friends: ['Mike', 'Pete', 'Steve']
+}
+
+const myCountry = {
+    country: 'USA',
+    capital: 'DC',
+    language: 'English',
+    population: '330',
+    neighbors: ['Canada', 'Mexico']
+}
 
