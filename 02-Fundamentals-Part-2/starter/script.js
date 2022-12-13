@@ -21,3 +21,27 @@ function describeCountry(country, population, capitalCity) {
 }
 
 console.log(describeCountry('USA', 328, 'DC'));
+
+function calcAge1(birthYear) {
+    return (2022 - birthYear);
+}
+
+console.log(calcAge1(2001));
+
+const calcAge2 = function(birthYear) {
+    return 2022 - birthYear;
+}
+
+console.log(calcAge2(2002));
+
+function percentageOfWorld1(population){
+    return (population/79);
+}
+
+console.log(percentageOfWorld1(1441));
+
+const percentageOfWorld2 = function(population) {
+    return (population/79);
+}
+
+console.log(percentageOfWorld2(790));
