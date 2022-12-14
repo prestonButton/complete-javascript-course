@@ -132,14 +132,6 @@ if(neighbors.includes('Germany') === false) console.log(`probably not a central 
 neighbors[neighbors.indexOf('Canada')] = 'Communist State of Canada';
 cl(neighbors);
 
-const prestonObject = {
-    firstName: 'Preston',
-    lastName: 'Button',
-    age: 21,
-    job: 'student',
-    friends: ['Mike', 'Pete', 'Steve']
-}
-
 const myCountry = {
     country: 'USA',
     capital: 'DC',
@@ -148,3 +140,27 @@ const myCountry = {
     neighbors: ['Canada', 'Mexico']
 }
 
+const prestonObject = {
+    firstName: 'Preston',
+    lastName: 'Button',
+    age: 21,
+    job: 'student',
+    friends: ['Mike', 'Pete', 'Steve']
+}
+
+cl(prestonObject.lastName);
+cl(prestonObject['lastName']);
+
+// const input = prompt(`What do you want to know about Preston? Choose between firstName or lastName`)
+// cl(prestonObject[input]);
+
+cl(`${myCountry.country} has ${myCountry.population} million ${myCountry.language} 
+speaking people and ${myCountry.neighbors.length} neighboring countries, and its 
+capital is ${myCountry.capital}`);
+
+myCountry.population += 2;
+cl(myCountry.population);
+cl(myCountry.population);
+
+myCountry['population'] -= 2;
+cl(myCountry.population);
