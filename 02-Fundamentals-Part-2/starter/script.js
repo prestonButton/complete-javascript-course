@@ -22,15 +22,15 @@ function describeCountry(country, population, capitalCity) {
 
 console.log(describeCountry('USA', 328, 'DC'));
 
-function calcAge1(birthYear) {
-    return (2022 - birthYear);
-}
+// function calcAge1(birthYear) {
+//     return (2022 - birthYear);
+// }
 
-console.log(calcAge1(2001));
+// console.log(calcAge1(2001));
 
-const calcAge2 = function(birthYear) {
-    return 2022 - birthYear;
-}
+// const calcAge2 = function(birthYear) {
+//     return 2022 - birthYear;
+// }
 
 // console.log(calcAge2(2002));
 
@@ -140,16 +140,8 @@ const myCountry = {
     neighbors: ['Canada', 'Mexico']
 }
 
-const prestonObject = {
-    firstName: 'Preston',
-    lastName: 'Button',
-    age: 21,
-    job: 'student',
-    friends: ['Mike', 'Pete', 'Steve']
-}
 
-cl(prestonObject.lastName);
-cl(prestonObject['lastName']);
+
 
 // const input = prompt(`What do you want to know about Preston? Choose between firstName or lastName`)
 // cl(prestonObject[input]);
@@ -164,3 +156,19 @@ cl(myCountry.population);
 
 myCountry['population'] -= 2;
 cl(myCountry.population);
+
+const prestonObject = {
+    firstName: 'Preston',
+    lastName: 'Button',
+    birthYear: 2001,
+    age: 21,
+    job: 'student',
+    friends: ['Mike', 'Pete', 'Steve'],
+    hasDriversLicense: true,
+
+    calcAge: function() {
+        return 2022 - this.birthYear;
+    }
+}
+
+cl(prestonObject.calcAge());
