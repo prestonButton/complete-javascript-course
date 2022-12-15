@@ -163,7 +163,7 @@ const prestonObject = {
     birthYear: 2001,
     age: 21,
     job: 'student',
-    friends: ['Mike', 'Pete', 'Steve'],
+    friends: ['Mike', 'Pete', 'Steven'],
     hasDriversLicense: true,
 
     calcAge: function() {
