@@ -166,9 +166,17 @@ const prestonObject = {
     hasDriversLicense: true,
 
     calcAge: function(birthYear) {
-        return 2022 - this.birthYear;
+        this.age = 2022 - this.birthYear;
+        return this.age;
+    },
+
+    getSummary: function() {
+        return(`${this.firstName} is a ${this.calcAge()} year-old ${this.job} and he has ${this.hasDriversLicense ? 'a' : 'no'} drivers license`);
     }
 }
 
-console.log(prestonObject.calcAge(prestonObject.birthYear))
+prestonObject.calcAge();
+console.log(prestonObject.age);
+
+console.log(prestonObject.getSummary());
 
