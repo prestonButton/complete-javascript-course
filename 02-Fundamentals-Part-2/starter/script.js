@@ -166,7 +166,7 @@ const prestonObject = {
     hasDriversLicense: true,
 
     calcAge: function(birthYear) {
-        return 2022 - birthYear;
+        return 2022 - this.birthYear;
     }
 }
 
