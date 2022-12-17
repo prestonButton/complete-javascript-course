@@ -161,14 +161,14 @@ const prestonObject = {
     firstName: 'Preston',
     lastName: 'Button',
     birthYear: 2001,
-    age: 21,
     job: 'student',
     friends: ['Mike', 'Pete', 'Steven'],
     hasDriversLicense: true,
 
-    calcAge: function() {
-        return 2022 - this.birthYear;
+    calcAge: function(birthYear) {
+        return 2022 - birthYear;
     }
 }
 
-cl(prestonObject.calcAge());
+console.log(prestonObject.calcAge(prestonObject.birthYear))
+
