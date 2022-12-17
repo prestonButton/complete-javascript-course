@@ -137,10 +137,21 @@ const myCountry = {
     capital: 'DC',
     language: 'English',
     population: '330',
-    neighbors: ['Canada', 'Mexico']
+    neighbors: ['Canada', 'Mexico'],
+
+    describe: function() {
+        return `${this.country}'s capital is ${this.capital}. It's ${this.population} million people speak 
+        ${this.language} and it has ${this.neighbors.length} neighbors, ${this.neighbors[0]} and ${this.neighbors[1]}`;
+    },
+
+    checkIsland: function() {
+        this.neighbors.length === 0 ? this.isIsland = true : this.isIsland = false;
+        return this.isIsland;
+    }
 }
 
-
+console.log(myCountry.describe());
+console.log(myCountry.checkIsland());
 
 
 // const input = prompt(`What do you want to know about Preston? Choose between firstName or lastName`)

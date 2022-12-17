@@ -56,3 +56,4 @@ const totals = [10 + calcTip(10), 100 + calcTip(100), 1000 + calcTip(1000)];
 
 console.log(tips)
 console.log(totals)
+
