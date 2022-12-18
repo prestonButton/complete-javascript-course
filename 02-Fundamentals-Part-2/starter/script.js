@@ -191,3 +191,10 @@ console.log(prestonObject.age);
 
 console.log(prestonObject.getSummary());
 
+for(let rep = 1; rep <=10; rep++) {
+    console.log(`Lifting weights repetition ${rep}` );
+}
+
+for(let vote = 1; vote <= 50; vote++) {
+    console.log(`Voter number ${vote} is voting`);
+}
