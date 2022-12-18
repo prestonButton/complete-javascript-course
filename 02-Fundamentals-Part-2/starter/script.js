@@ -191,10 +191,36 @@ console.log(prestonObject.age);
 
 console.log(prestonObject.getSummary());
 
-for(let rep = 1; rep <=10; rep++) {
-    console.log(`Lifting weights repetition ${rep}` );
+// for(let rep = 1; rep <=10; rep++) {
+//     console.log(`Lifting weights repetition ${rep}` );
+// }
+
+// for(let vote = 1; vote <= 50; vote++) {
+//     console.log(`Voter number ${vote} is voting`);
+// }
+const types = [];
+
+console.log(`--ONLY STRING--`)
+for(let i = 0; i < prestonArray.length; i++){
+    if(typeof prestonArray[i] != 'string') continue;
+
+    console.log(prestonArray[i], typeof prestonArray[i]);
+    types.push(typeof prestonArray[i]);
 }
 
-for(let vote = 1; vote <= 50; vote++) {
-    console.log(`Voter number ${vote} is voting`);
+const newYears = [1991, 2007, 1969, 2020];
+const newAges = [];
+
+for(let i = 0; i < newYears.length; i++) {
+    newAges.push(calcAge3(newYears[i]));
+}
+
+console.log(newAges);
+
+console.log(`--Break With Number--`)
+for(let i = 0; i < prestonArray.length; i++){
+    if(typeof prestonArray[i] === 'number') break;
+
+    console.log(prestonArray[i], typeof prestonArray[i]);
+    types.push(typeof prestonArray[i]);
 }
