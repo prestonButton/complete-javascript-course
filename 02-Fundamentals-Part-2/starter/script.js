@@ -224,3 +224,7 @@ for(let i = 0; i < prestonArray.length; i++){
     console.log(prestonArray[i], typeof prestonArray[i]);
     types.push(typeof prestonArray[i]);
 }
+
+// for(let i = prestonArray.length - 1; i >= 0; i--) {
+//     console.log()
+// }
