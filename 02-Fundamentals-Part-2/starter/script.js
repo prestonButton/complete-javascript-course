@@ -228,3 +228,5 @@ for(let i = 0; i < prestonArray.length; i++){
 for(let i = prestonArray.length - 1; i >= 0; i--) {
     console.log(prestonArray[i])
 }
+
+// console.log(`--WHILE LOOP--`);
