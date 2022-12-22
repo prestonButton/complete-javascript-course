@@ -143,16 +143,13 @@ console.log(tips);
 console.log(totals);
 
 function calcAverage(arr) {
-    let sum;
+    let sum = 0;
     
     for(let i = 0; i < arr.length; i++) {
-        sum = sum + arr[i];
+        sum += arr[i];
     }
 
-    console.log(sum);
     const result = sum/arr.length;
-    console.log(typeof result);
-    console.log(result);
     return result;
 }
 
