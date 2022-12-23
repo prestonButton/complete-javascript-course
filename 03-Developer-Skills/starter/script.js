@@ -69,3 +69,21 @@ const calcTempAmplitudeNew = function (temps1, temps2) {
 
 calcTempAmplitude(temperatures);
 
+const measureKelvin = function() {
+    const measurement = {
+        type: 'temp',
+        unit: 'celcius',
+
+        //C. FIX
+        value: Number(prompt('Degrees Celcius'))
+    }
+
+    //B. FIND
+    console.table(measurement);
+
+    const kelvin = measurement.value + 273;
+    return kelvin;
+}
+
+//A. IDENTIFY
+console.log(measureKelvin());
