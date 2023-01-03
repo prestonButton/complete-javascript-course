@@ -23,3 +23,13 @@ function calcAge(birthyear) {
 
 const firstName = 'Preston';
 calcAge(2001);
+
+
+
+var me = 'Preston';
+let job = 'student';
+const year = 2001;
+
+function addDecl(a, b){return a + b;};
+const addExpr = function(a, b) {return a+b};
+const addArrow = (a, b) => a + b;
