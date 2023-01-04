@@ -31,53 +31,90 @@ const restaurant = {
     return [this.starterMenu[starterIndex], this.mainMenu[mainIndex]];
   },
 
-  orderDelivery: function({starterIndex = 1, mainIndex = 0, time = '20:00', address}) {
+  orderDelivery: function ({
+    starterIndex = 1,
+    mainIndex = 0,
+    time = '20:00',
+    address,
+  }) {
     console.log(
       `Order received!: ${this.starterMenu[starterIndex]} and ${this.mainMenu[mainIndex]} will be delivered to ${address} at ${time}.`
     );
-  }
+  },
+
+  orderPasta: function (ing1, ing2, ing3) {
+    console.log(`Here is your delicious pasta with ${ing1}, ${ing2}, ${ing3}`);
+  },
 };
 
-restaurant.orderDelivery({
-  time: '23:30',
-  address: 'Via del Sole, 21',
-  mainIndex: 2,
-  starterIndex: 2,
-})
+// restaurant.orderDelivery({
+//   time: '23:30',
+//   address: 'Via del Sole, 21',
+//   mainIndex: 2,
+//   starterIndex: 2,
+// })
 
-restaurant.orderDelivery({
-  address: '101 NMR Dr.',
-  starterIndex: 1
-})
+// restaurant.orderDelivery({
+//   address: '101 NMR Dr.',
+//   starterIndex: 1
+// })
 
-const { name, openingHours, categories } = restaurant;
-console.log(name, openingHours, categories);
+// const { name, openingHours, categories } = restaurant;
+// console.log(name, openingHours, categories);
 
-const {
-  name: restaurantName,
-  openingHours: hours,
-  categories: tags,
-} = restaurant;
-console.log(restaurantName, hours, tags);
+// const {
+//   name: restaurantName,
+//   openingHours: hours,
+//   categories: tags,
+// } = restaurant;
+// console.log(restaurantName, hours, tags);
 
-let a = 111;
-let b = 999;
-const obj = { a: 23, b: 7, c: 14 };
+// let a = 111;
+// let b = 999;
+// const obj = { a: 23, b: 7, c: 14 };
 
-({ a, b } = obj);
-console.log(a, b);
+// ({ a, b } = obj);
+// console.log(a, b);
 
-const {
-  fri: { open, close },
-} = openingHours;
-console.log(open, close);
+// const {
+//   fri: { open, close },
+// } = openingHours;
+// console.log(open, close);
 
-const [starter, mainCourse] = restaurant.order(2, 0);
-console.log(starter, mainCourse);
+// const [starter, mainCourse] = restaurant.order(2, 0);
+// console.log(starter, mainCourse);
 
-const nested = [2, 4, [5, 6]];
-// const [i,, j] = nested;
-// console.log(i, j);
+// const nested = [2, 4, [5, 6]];
+// // const [i,, j] = nested;
+// // console.log(i, j);
 
-const [i, , [j, k]] = nested;
-console.log(i, j, k);
+// const [i, , [j, k]] = nested;
+// console.log(i, j, k);
+
+const arr = [7, 8, 9];
+const newArr = [1, 2, ...arr];
+console.log(newArr);
+
+const newMenu = [...restaurant.mainMenu, 'Gnocci'];
+console.log(newMenu);
+
+const menu = [...restaurant.starterMenu, ...restaurant.mainMenu];
+console.log(menu);
+
+// const ingredients = [
+//   prompt("Let's make pasta! Ingredient 1?"),
+//   prompt("Let's make pasta! Ingredient 2?"),
+//   prompt("Let's make pasta! Ingredient 3?"),
+// ];
+
+// console.log(ingredients);
+
+// restaurant.orderPasta(...ingredients);
+
+const newRestaurant = {
+  ...restaurant, 
+  founder: 'Guiseppe',
+  foundingYear: 1998
+}
+
+console.log(newRestaurant);
