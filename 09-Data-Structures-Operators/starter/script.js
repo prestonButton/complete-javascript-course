@@ -52,27 +52,29 @@ const restaurant = {
   },
 };
 
-console.log('---OR---');
-console.log('' || 'Preston');
-console.log(true || 0);
-console.log(undefined || null);
+// console.log('---OR---');
+// console.log('' || 'Preston');
+// console.log(true || 0);
+// console.log(undefined || null);
 
-const guests1 = restaurant.numGuest ? restaurant.numGuest : 10;
-console.log(guests1);
+// const guests1 = restaurant.numGuest ? restaurant.numGuest : 10;
+// console.log(guests1);
+restaurant.numGuest = 0;
+const guests = restaurant.numGuest || 10;
+console.log(guests);
 
-const guests2 = restaurant.numGuest || 10;
-console.log(guests2);
+const guestsBetter = restaurant.numGuest ?? 10;
+console.log(guestsBetter);
+// console.log('---AND---');
+// console.log(0 && 'Preston');
+// console.log(1 && 'Preston');
+// console.log(null && '');
 
-console.log('---AND---');
-console.log(0 && 'Preston');
-console.log(1 && 'Preston');
-console.log(null && '');
+// if (restaurant.orderPizza) {
+//   restaurant.orderPizza('Mushrooms', 'Pineapple');
+// }
 
-if (restaurant.orderPizza) {
-  restaurant.orderPizza('Mushrooms', 'Pineapple');
-}
-
-restaurant.orderPizza && restaurant.orderPizza('Mushrooms', 'Pineapple');
+// restaurant.orderPizza && restaurant.orderPizza('Mushrooms', 'Pineapple');
 // const arr = [1, 2, ...[3, 4]];
 
 // const [a, b, ...others] = [1, 2, 3, 4, 5];
