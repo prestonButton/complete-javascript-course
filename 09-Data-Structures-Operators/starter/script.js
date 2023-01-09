@@ -52,6 +52,34 @@ const restaurant = {
   },
 };
 
+const rest1 = {
+  name: 'capri',
+  // numGuests: 20,
+  numGuests: 0,
+}
+
+const rest2 = {
+  name: 'La Pieta',
+  owner: 'Gio Rossi',
+};
+
+//or assignment operator
+// rest1.numGuest = rest1.numGuests || 10;
+// rest2.numGuest = rest2.numGuests || 10;
+
+rest1.numGuests ??= 10;
+rest2.numGuests ??= 10;
+
+//and assignment operator
+// rest2.owner = rest2.owner && '<ANONYMOUS>';
+// rest1.owner = rest1.owner && '<ANONYMOUS>';
+
+rest1.owner &&= '<ANONYMOUS>';
+rest2.owner &&= '<ANONYMOUS>';
+
+console.log(rest1);
+console.log(rest2);
+
 // console.log('---OR---');
 // console.log('' || 'Preston');
 // console.log(true || 0);
@@ -59,12 +87,12 @@ const restaurant = {
 
 // const guests1 = restaurant.numGuest ? restaurant.numGuest : 10;
 // console.log(guests1);
-restaurant.numGuest = 0;
-const guests = restaurant.numGuest || 10;
-console.log(guests);
+// restaurant.numGuest = 0;
+// const guests = restaurant.numGuest || 10;
+// console.log(guests);
 
-const guestsBetter = restaurant.numGuest ?? 10;
-console.log(guestsBetter);
+// const guestsBetter = restaurant.numGuest ?? 10;
+// console.log(guestsBetter);
 // console.log('---AND---');
 // console.log(0 && 'Preston');
 // console.log(1 && 'Preston');
