@@ -8,10 +8,8 @@
 <p>
     Destructuring was introduced in ES6, used to unpack values from objects, including arrays, into seperate variables
 
-    <code>
         const arr = [2, 3, 4, 5, 6, 7];
         const a = arr[0];
         const b = arr[1]
-    </code>
 
 </p>
