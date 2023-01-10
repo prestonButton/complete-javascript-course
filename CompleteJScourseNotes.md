@@ -6,15 +6,12 @@
 
 <h2>Destructuring Arrays</h2>
 <p>
-    Destructuring was introduced in ES6, used to unpack values from objects, including arrays, into seperate variables.
+    Destructuring was introduced in ES6, used to unpack values from objects, including arrays, into seperate variables
 
-    We used to:
     <code>
         const arr = [2, 3, 4, 5, 6, 7];
         const a = arr[0];
         const b = arr[1]
     </code>
-    
-    etc. 
 
 </p>
