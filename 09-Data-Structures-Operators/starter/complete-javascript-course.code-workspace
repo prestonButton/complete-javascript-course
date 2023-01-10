@@ -1,12 +1,14 @@
 {
   "folders": [
-	{
-		"path": "../.."
-	},
-	{
-		"name": "Filtered View",
-		"uri": "fildir:/"
-	}
-],
-  "settings": {}
+    {
+      "path": "../.."
+    },
+    {
+      "name": "Filtered View",
+      "uri": "fildir:/"
+    }
+  ],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "complete-javascript-course"
+  }
 }
